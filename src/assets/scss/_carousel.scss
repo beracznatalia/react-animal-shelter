@@ -1,0 +1,39 @@
+
+  
+.carousel {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+  
+.carousel__item {
+    cursor: pointer;
+    padding: 4%;
+    float: left;
+    width: 25%;
+    height: 220px;
+    animation: opacityAnim 1s;
+}
+  
+.carousel__photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel__button {
+    position: absolute;
+    font-weight: bold;
+    font-size: $font-m;
+    user-select: none;
+    margin: 1em 10px;
+    top: 65px;
+}
+  
+.carousel__button--left {
+    left: -50px;
+}
+  
+.carousel__button--right {
+    right: -50px;
+}

@@ -1,0 +1,47 @@
+.about--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.about__content {
+    display: inline-block;
+    max-width: 500px;
+}
+  
+.about__content--text {
+    padding: 40px;
+    font-size: $font-xs;
+  
+    .about__title {
+        font-weight: bold;
+        font-size: $font-xl;
+    }
+  
+    .about__date {
+        font-size: $font-xs;
+    }
+      
+    .about__text {
+        font-size: $font-sm;
+    }
+  
+    .about__blockquote {
+        font-weight: bold;
+        float: right;
+        color: red;
+        font-size: $font-m;
+    }
+}
+  
+.about__img {
+    width: 100%;
+}
+  
+.about__row--top * {
+    vertical-align: text-bottom;
+}
+  
+.about__row--bottom * {
+    vertical-align: text-top;
+}

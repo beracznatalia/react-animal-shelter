@@ -1,0 +1,58 @@
+
+@media only screen and (max-width: 1000px) {
+    .section {
+      height: auto;
+      margin: 50px 0;
+    }
+    .site-home {
+      margin: 0;
+    }
+    .home__title.home__title--right {
+      top: 60vh;
+      right: 50vw;
+      color: black;
+    }
+    .header__followMe {
+      display: none;
+    }
+    .about__img {
+      display: none;
+    }
+    .carousel {
+      display: none;
+    }
+    .carousel__button {
+      position: absolute;
+      top: 80px;
+    }
+    .carousel__button--left {
+      left: 10px;
+    }
+    .carousel__button--right {
+      right: 10px;
+    }
+    .gallery__row {
+      width: 100%;
+      position: static;
+    }
+    .gallery__half {
+      position: static;
+      width: 100%;
+      padding: 20px;
+      height: auto;
+      text-align: center;
+    }
+    .gallery__desc dt {
+      text-align: right;
+      padding-right: 30px;
+    }
+    .gallery__desc dd {
+      padding-left: 30px;
+      text-align: left;
+    }
+    .contact__half{
+      width: 100vw;
+      height: auto;
+      padding: 50px 20px;
+    }
+}

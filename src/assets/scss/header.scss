@@ -1,0 +1,88 @@
+
+@import './_hamburger.scss';
+
+.header {
+    position: fixed;
+    z-index: 2;
+}
+  
+.header__logo {
+    position: fixed;
+    left: 25px;
+    top: 25px;
+    width: 80px;
+    box-shadow: 0 0 1px black;
+}
+  
+.header__nav {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;  
+    top: 0;
+    right: 0;
+    height: 100vh;
+    border-left: 1px solid black;
+    opacity: 0;
+    width: 30vw;
+    margin-right: -30vw;
+    transition: margin 1s, opacity 1s;  
+}
+  
+.jsNav.is-display {
+    opacity: 1;
+    margin-right: 0;
+}
+  
+.nav__item {
+    font-size: $font-l;
+    margin: 25px;
+
+    &.is-active {
+        font-weight: bold;
+    }
+}
+  
+.nav__title, .header__title {
+    font-size: $font-sm;
+}
+  
+.nav__followMe {
+    position: absolute;
+    bottom: 100px;
+    text-align: center;
+
+    .nav__title {
+        font-size: $font-sm;
+    }
+
+    .nav__social {
+        font-size: $font-sm;
+        margin: 5px;
+    }
+}
+  
+
+  
+.header__followMe {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    font-weight: bold;
+
+    .header__title {
+        font-size: $font-sm;
+    }
+
+    .header__socials {
+        position: relative;
+        display: inline-block;
+        font-size: $font-sm;
+        
+        .header__social {
+            margin-right: 10px;
+        }
+    }
+}

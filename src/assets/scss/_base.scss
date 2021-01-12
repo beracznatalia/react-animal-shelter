@@ -1,0 +1,53 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* pozwala na rozszerzenie ekranu na scroll */
+}
+  
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+  
+.container {
+    position: relative;
+}
+    
+.section {
+    height: 100vh;
+    width: 100vw;
+}
+  
+.button {
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #222;
+    border: 1px solid #222;
+    transition: 0.5s;
+    margin: 1em 0;
+}
+    
+.button:hover {
+    background-color: #222;
+    color: #fff;
+}
+    
+.link {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+    
+.link:hover {
+    color: lightgray;
+}

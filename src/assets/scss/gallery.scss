@@ -1,0 +1,57 @@
+@import './_carousel.scss';
+
+@keyframes opacityAnim {
+    0% { opacity: 0; }
+    100% { opacity: 100%}
+}
+  
+.gallery--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.gallery__row {
+    width: 900px;
+    position: relative;
+}
+  
+.gallery__half {
+    position: relative;
+    width: 50%;
+    height: 350px;
+    display: inline-block;
+    vertical-align: text-top;
+    padding: 20px;
+}
+  
+.gallery__img {
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+
+    &.is-active, 
+    &.is-active-another {
+      animation: opacityAnim 1s;
+    }
+}
+
+.gallery__title {
+    margin: 0;
+}
+  
+.gallery__subtitle {
+    font-size: $font-sm;
+}
+  
+.gallery__desc dt, 
+.gallery__desc dd {
+    width: 50%;
+    min-height: 10px;
+    display: inline-block;
+    margin: 0;
+}
+  
+.gallery__desc dd::first-letter {
+    text-transform: uppercase;
+}

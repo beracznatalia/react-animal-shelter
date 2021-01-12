@@ -1,0 +1,33 @@
+.home__half {
+    display: inline-block;
+    width: 50vw;
+    height: 100vh;
+}
+  
+.home__title {
+    font-size: 15vw;
+    top: 50vh;
+    margin: 25px;
+
+    &.home__title--left {
+        position: relative;
+        float: right;
+    }
+      
+    &.home__title--right {
+        position: absolute;
+        color: white;
+    }
+}
+    
+.home__background {
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+  
+    .home__image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
